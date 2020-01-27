@@ -16,6 +16,8 @@ public abstract class FiguraGeometrica {
 	public void setBase(float base) {
 		this.base = base;
 	}
+	
+	public abstract int cantLados ();
 
 	
 	

@@ -21,9 +21,16 @@ public class Triangulo extends FiguraGeometrica{
 	public float getArea() {
 		return (getBase() * getAltura()) / 2;
 	}
-	
-	public int getCantLados() {
+
+	@Override
+	public int cantLados() {
+		// TODO Auto-generated method stub
 		return 3;
 	}
 	
 }
+	
+	
+
+	
+

@@ -21,9 +21,12 @@ public class Rectangulo extends FiguraGeometrica{
 	public float getArea() {
 		return getBase() * getAltura();
 	}
-	
-	public int getCantLados() {
+
+	@Override
+	public int cantLados() {
+		// TODO Auto-generated method stub
 		return 4;
 	}
+	
 
 }

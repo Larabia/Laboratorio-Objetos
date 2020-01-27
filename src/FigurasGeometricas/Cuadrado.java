@@ -12,7 +12,10 @@ public class Cuadrado extends FiguraGeometrica{
 		return getBase() * getBase();
 	}
 	
-	public int getCantLados() {
+
+	@Override
+	public int cantLados() {
+		// TODO Auto-generated method stub
 		return 4;
 	}
 

@@ -41,14 +41,14 @@ public class AppPeriodico {
 				System.out.println("Ingrese precio: ");
 				float pre = scan.nextFloat();
 				
-				Publicidad publi = new Publicidad(img, link, sec, pos, dim, aus, pre);
+				pagina[i] = new Publicidad(img, link, sec, pos, dim, aus, pre);
 
 				break;
 
 			case 2:
 				System.out.println("Ingrese autor: ");
 				String autor = scan.next();
-				Articulo art = new Articulo(img, link, sec, pos, dim, autor);
+				pagina[i] = new Articulo(img, link, sec, pos, dim, autor);
 
 				break;
 
@@ -65,7 +65,7 @@ public class AppPeriodico {
 			System.out.println(pagina[i]);
 
 			if (pagina[i].esFacturable()) {
-				//casting para convertir el objeto Viñeta
+				//casting para convertir el objeto Viñeta en publicidad y acceder a los metedos de publicidad
 				itemPubli = (Publicidad) pagina[i];
 				total += itemPubli.getPrecio();
 			}
