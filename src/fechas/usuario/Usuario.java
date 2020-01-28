@@ -36,7 +36,7 @@ public class Usuario {
 		nombre = nomLow.substring(1);
 		apellido = apLow.substring(1);
         
-		return apMayus + apellido + ", " + nomMayus + nombre;  
+		return nomMayus + nombre + " " + apMayus + apellido;  
 		
 	}
 	

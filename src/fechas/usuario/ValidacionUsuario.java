@@ -20,5 +20,11 @@ public class ValidacionUsuario {
 		
 		return contrasena.length()== 8;
 	}
+	
+	
+	public static boolean ValidarFechaPasado (Date fecha) {
+		
+		return fecha.before(new Date());
+	}
 
 }
